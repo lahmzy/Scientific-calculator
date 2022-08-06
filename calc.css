@@ -1,0 +1,127 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 240, 240);
+}
+
+.container{
+  width: 45%;
+  height: 45vh;
+  padding: 18px;
+  border-radius: 8px;
+  
+  box-shadow: 12px 12px 20px #cbced1,
+            -12px -12px 20px #cbced1
+}
+
+.display #screen{
+  width: 97%;
+  font-size: 35px;
+  border: none;
+  background-color: #ecf0f3;
+  outline: none;
+  height: 35px;
+  text-align: right;
+  padding-right:.5em ;
+  box-shadow:inset 8px 8px 8px #cbced1,inset -8px -8px 8px #cbced1;
+  border-radius: 6px;
+
+}
+
+
+.btns{
+  width: 100%;
+  display: flex;
+  margin-top: 1.7em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns .row button{
+  width: 5em;
+  height: 1.875em;
+  margin: 5px;
+  outline:none;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #000020,
+              -5px -5px 8px #ffffff
+
+
+}  
+
+.btns .row button:hover{
+  box-shadow: inset 5px 5px 8px rgba(16,16,16,0.1),
+               inset -5px -5px 8px #ffffff
+}
+
+.equals{
+  background-color: #33ccff;
+  color: #ffffff;
+  box-shadow:inset 5px 5px 8px #66d9ff
+  inset -5px -5px 8px #00ace6 ;
+}
+
+.equals:hover{
+  
+  box-shadow:inset 5px 5px 8px #00ace6,
+  inset -5px -5px 8px #00ace6 ;
+}
+
+.ac{
+  background-color: #2eb82e;
+  color: #ffffff;
+  
+}
+
+.ac:hover{
+  
+  box-shadow:inset 5px 5px 8px #2eb82e,
+  inset -5px -5px 8px #33cc33 ;
+}
+
+.ce{
+  background: #ff3399 ;
+  color: #ffffff;
+
+}
+
+.ce:hover{
+  box-shadow: inset 5px 5px 8px #e60073, 
+  inset -5px -5px 8px #ff3399 ;
+
+}
+
+@media only screen and (min-width:360px) and (max-width:768px){
+
+  .btns .row button{
+    width:37px ;
+    height:22 px ;
+    margin: 5px 10px;
+    outline:none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #000020,
+                -5px -5px 8px #ffffff
+
+  
+  }
+
+  .container{
+     width: 80%;
+     height: auto;
+    padding: 18px;
+    border-radius: 8px;
+    
+    box-shadow: 12px 12px 20px #cbced1,
+              -12px -12px 20px #cbced1 
+}
+}
